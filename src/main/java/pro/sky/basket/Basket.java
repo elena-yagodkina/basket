@@ -21,8 +21,4 @@ public class Basket {
         }
         return items;
     }
-
-    public List<Integer> getList() {
-        return items;
-    }
 }

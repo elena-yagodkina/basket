@@ -8,9 +8,9 @@ import java.util.List;
 
 @Service
 public class BasketServiceImpl implements BasketService {
-    @Autowired
     private final Basket basket;
 
+    @Autowired
     public BasketServiceImpl(Basket basket) {
         this.basket = basket;
     }
@@ -22,6 +22,6 @@ public class BasketServiceImpl implements BasketService {
 
     @Override
     public List<Integer> get() {
-        return basket.getList();
+        return basket.getItems();
     }
 }
